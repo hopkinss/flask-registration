@@ -1,5 +1,7 @@
 click==6.7
 Flask==1.0.2
+-e git+git@github.com:hopkinss/flask-registration.git@53abbb992c5c8bd2edc929014c71aa914a70e9eb#egg=flaskr
+gunicorn==19.9.0
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.0
