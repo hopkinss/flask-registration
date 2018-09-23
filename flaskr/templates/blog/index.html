@@ -22,7 +22,7 @@
             <tr>
             <td>{{s['username']}}</td>
             <td>{{s['email']}}</td>
-            <td>{{ s['registered'].strftime('%d-%m-%Y') }}</td>
+            <td>{{ s['registered'].strftime('%d-%b-%Y') }}</td>
             <td>
                 {% if g.user['id'] == s['id'] %}
                   <a class="action" href="{{ url_for('blog.update', id=s['id']) }}">Edit</a>

@@ -1,17 +1,22 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Register{% endblock %}</h1>
+  <h4>{% block title %}Register for class{% endblock %}</h4>
 {% endblock %}
 
 {% block content %}
   <form method="post">
+
     <label for="username">Username</label>
     <input name="username" id="username" required>
     <label for="email">Email</label>
     <input name="email" id="email" required>
     <label for="password">Password</label>
     <input type="password" name="password" id="password" required>
-    <input type="submit" value="Register">
+    <div class="center-div">
+      <input type="submit" value="Register" class="btn btn-success" style="width: 100px;">
+      <a href="{{ url_for('blog.index') }}" style="width: 100px;" class="btn btn-danger">Cancel</a>
+    </div>
+
   </form>
 {% endblock %}

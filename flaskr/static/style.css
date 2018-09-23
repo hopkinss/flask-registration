@@ -10,11 +10,18 @@ body {
   background: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: serif;
-  color: #377ba8;
+  color: #ffffff;
   margin: 1rem 0;
 }
+
+h2, h3, h4, h5, h6 {
+  font-family: serif;
+  color: #3A7734;
+  margin: 1rem 0;
+}
+
 
 a {
   color: #377ba8;
@@ -26,7 +33,7 @@ hr {
 }
 
 nav {
-  background: lightgray;
+  background: #3A7734;
   display: flex;
   align-items: center;
   padding: 0 0.5rem;
@@ -115,9 +122,9 @@ nav ul li a, nav ul li span, header .action {
   margin-bottom: 0.5em;
 }
 
-.content input, .content textarea {
-  margin-bottom: 1em;
-}
+/*.content input, .content textarea {*/
+  /*margin-bottom: 1em;*/
+/*}*/
 
 .content textarea {
   min-height: 12em;
@@ -128,10 +135,10 @@ input.danger {
   color: #cc2f2e;
 }
 
-input[type=submit] {
-  align-self: start;
-  min-width: 10em;
-}
+/*input[type=submit] {*/
+  /*align-self: start;*/
+  /*min-width: 10em;*/
+/*}*/
 
 #hor-minimalist-a
 {
@@ -159,4 +166,12 @@ input[type=submit] {
 #hor-minimalist-a tbody tr:hover td
 {
 	color: #009;
+}
+
+.center-div
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
